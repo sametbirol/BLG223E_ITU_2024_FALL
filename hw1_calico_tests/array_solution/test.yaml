@@ -5,6 +5,10 @@
         run: mkdir -p my_solutions
         blocker: true
         visible: false
+- initialize_executable:
+        run: chmod +x ./tools/file_compare
+        blocker: true
+        visible: false
 
 - compile:
         run: /usr/bin/g++ -c main.cpp -o ./main.o
