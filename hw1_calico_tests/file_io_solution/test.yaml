@@ -12,7 +12,7 @@
 
 
 - compile:
-          run: /usr/bin/g++ -c main.cp -fp -o ./main.o
+          run: /usr/bin/g++ -c main.cpp -o ./main.o
           blocker: true
 
 - link:
