@@ -1,6 +1,0 @@
-- debugger1 : 
-        run : mv your_solution/case_1.csv solutions/solution_1.csv
-- debugger2 : 
-        run : mv your_solution/case_2.csv solutions/solution_2.csv
-- debugger3 : 
-        run : mv your_solution/case_3.csv solutions/solution_3.csv
