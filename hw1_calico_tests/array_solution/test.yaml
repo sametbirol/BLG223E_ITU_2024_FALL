@@ -1,0 +1,47 @@
+- init:
+        run: rm -f main.o main
+        visible: false
+
+- compile:
+        run: /usr/bin/g++ -c main.cpp -o ./main.o
+        blocker: true
+
+- link:
+        run: /usr/bin/g++ ./main.o -o ./main
+        blocker: true
+
+- case_1_1k_row:
+        run: ./main data/hw1_1k_row.csv ./operations/operations_case_1.txt #timeout: 2
+        blocker: true
+- move_file_1:
+        run: mv array_solution.csv your_solution/case_1.csv
+        blocker: true
+- testing_case_1:
+        run: ./tools/file_compare your_solution/case_1.csv solutions/solution_1.csv
+        exit: 0
+        points: 10
+
+- case_2_10k_row:
+        run: ./main data/hw1_10k_row.csv ./operations/operations_case_2.txt #timeout: 20
+        blocker: true
+- move_file_2:
+        run: mv array_solution.csv your_solution/case_2.csv
+        blocker: true
+- testing_case_2:
+        run: ./tools/file_compare your_solution/case_2.csv solutions/solution_2.csv
+        exit: 0
+        points: 10
+
+- case_3_100k_row:
+        run: ./main data/hw1_100k_row.csv ./operations/operations_case_3.txt #timeout: 100
+        blocker: true
+- move_file_3:
+        run: mv array_solution.csv your_solution/case_3.csv
+        blocker: true
+- testing_case_3:
+        run: ./tools/file_compare your_solution/case_3.csv solutions/solution_3.csv
+        exit: 0
+        points: 10
+- out:
+        run: rm -f main.o main
+        visible: false
