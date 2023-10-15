@@ -1,6 +1,11 @@
 - init:
           run: rm -f main.o main
           visible: false
+- initialize_folder:
+          run: mkdir -p my_solutions
+          blocker: true
+          visible: false
+
 
 - compile:
           run: /usr/bin/g++ -c main.cp -fp -o ./main.o
