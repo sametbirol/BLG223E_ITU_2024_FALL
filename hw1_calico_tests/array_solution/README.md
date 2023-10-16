@@ -1,4 +1,4 @@
-# Homework Assignment: Array Solution
+# Homework Assignment 1: Array Solution
 
 This repository contains a C++ program for processing data from a CSV file (`array_solution.csv`) based on operations specified in an operations file. The program accepts filenames as command-line arguments and uses the provided `test.yaml` file for validation.
 
