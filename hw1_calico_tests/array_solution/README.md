@@ -35,8 +35,12 @@ To run tests using the provided test cases in `test.yaml`:
      calico --debug test.yaml
      ```
 
-4. **Check Results:**
-   - After successful comparisons, a `short_results.txt` file will be created. Check this file for detailed test results and comparisons between your program's output and the expected output.
+4. **Check Results Manually:**
+   - If you want to see differnece in files you can run: 
+     ```
+     diff --strip-trailing-cr ./my_solutions/case_1.csv ./solutions/solution_1.csv
+     ```
+   - Don't forget to change the case number as you need!
 
 ## Contact and Contributions
 
