@@ -5,11 +5,6 @@
           run: mkdir -p my_solutions
           blocker: true
           visible: false
-- initialize_executable:
-        run: chmod +x ./tools/diff_compare
-        blocker: true
-        visible: false
-
 
 - compile:
           run: /usr/bin/g++ -c main.cpp -o ./main.o
@@ -26,7 +21,7 @@
           run: ./main ./my_solutions/case_1.csv ./operations/operations_case_1.txt #timeout: 2
           blocker: true
 - testing_case_1:
-          run: ./tools/diff_compare ./my_solutions/case_1.csv ./solutions/solution_1.csv
+          run: diff --strip-trailing-cr ./my_solutions/case_1.csv ./solutions/solution_1.csv
           exit: 0
           points: 10
 
@@ -38,7 +33,7 @@
           blocker: true
 
 - testing_case_2:
-          run: ./tools/diff_compare ./my_solutions/case_2.csv ./solutions/solution_2.csv
+          run: diff --strip-trailing-cr ./my_solutions/case_2.csv ./solutions/solution_2.csv
           exit: 0
           points: 10
 
@@ -50,7 +45,7 @@
           blocker: true
 
 - testing_case_3:
-          run: ./tools/diff_compare ./my_solutions/case_3.csv ./solutions/solution_3.csv
+          run: diff --strip-trailing-cr ./my_solutions/case_3.csv ./solutions/solution_3.csv
           exit: 0
           points: 10
 
@@ -61,7 +56,7 @@
           run: ./main ./my_solutions/case_4.csv ./operations/operations_case_4.txt #timeout: 2
           blocker: true
 - testing_case_4:
-          run: ./tools/diff_compare ./my_solutions/case_4.csv ./solutions/solution_4.csv
+          run: diff --strip-trailing-cr ./my_solutions/case_4.csv ./solutions/solution_4.csv
           exit: 0
           points: 10
 
@@ -73,7 +68,7 @@
           blocker: true
 
 - testing_case_5:
-          run: ./tools/diff_compare ./my_solutions/case_5.csv ./solutions/solution_5.csv
+          run: diff --strip-trailing-cr ./my_solutions/case_5.csv ./solutions/solution_5.csv
           exit: 0
           points: 10
 
@@ -85,7 +80,7 @@
           blocker: true
 
 - testing_case_6:
-          run: ./tools/diff_compare ./my_solutions/case_6.csv ./solutions/solution_6.csv
+          run: diff --strip-trailing-cr ./my_solutions/case_6.csv ./solutions/solution_6.csv
           exit: 0
           points: 10
 - out:
