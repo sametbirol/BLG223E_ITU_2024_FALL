@@ -1,23 +1,50 @@
-Place your C++ source code file in the same directory as this testing framework and name it "main.cpp"
+# Homework Assignment 1: File I/O Solution
 
-Make sure that your main.cpp file outputs to the same data file as paritally mentioned in homework pdf.
+This repository contains a C++ program for processing data from a CSV file and performing operations specified in an operations file. The program accepts filenames as command-line arguments and uses the provided `test.yaml` file for validation.
 
-Ensure that your "main.cpp" file accepts file names as command-line arguments. Typically, this means that your main function should accept two arguments: the data file and the operations file.
+## Setup
 
-Use the provided test cases in "test.yml" to validate your C++ code. You can run the tests and compare your program's output against the expected output to check for correctness.
+1. **C++ Source Code:**
+   - Place your C++ source code file in the same directory as this testing framework and name it `main.cpp`.
 
-To run these test on calico , connect the docker environment preoviously shown in class.
+2. **Output Data File:**
+   - Ensure that your `main.cpp` file outputs to the same data file, as partially mentioned in the homework PDF.
 
-Go to vscode ubuntu terminal that starts with test@vm_docker:~/hostVolume$ 
-Go to file_io_solution folder where your c++ file is(current folder) by cd commands.
-run :
-    calico test.yaml
-or:
-    calico --debug test.yaml
-for more info.
+3. **Command-line Arguments:**
+   - Confirm that your `main.cpp` file accepts two command-line arguments: the data file and the operations file.
 
-Don't forget to check the "test_results.txt" file taht will be created after succesfull compares.
+## Running Tests
 
-Please contact if there are improvements to made or mistakes to fix. Help us improve the testing quality of this repo.
+To validate your C++ code using the provided test cases in `test.yaml`:
 
-It takes around 10s for my code to solve case 3, so if you need you can modify test.yaml to increase your timeout.
+1. **Connect to Calico:**
+   - Connect to the Calico Docker environment as previously demonstrated in class.
+
+2. **Navigate to Your Code:**
+   - Use the VSCode Ubuntu terminal or your preferred terminal.
+   - Navigate to the `file_io_solution` folder where your `main.cpp` file is located using the `cd` command.
+
+3. **Run Tests:**
+   - Execute the tests using one of the following commands:
+     ```
+     calico test.yaml
+     ```
+     or, for additional debugging information:
+     ```
+     calico --debug test.yaml
+     ```
+
+## Test Timeout Adjustment
+
+If your code takes longer to solve certain test cases, you can modify `test.yaml` to increase the timeout as needed.
+
+## Contact and Contributions
+
+If you identify opportunities for improvement or discover issues in the testing framework, please don't hesitate to contact us. Your feedback is essential in helping us enhance the testing quality of this repository.
+
+We encourage contributions to improve this resource. For contribution guidelines, please refer to the repository's issues section.
+
+---
+
+**Note:** This README provides essential instructions for setting up your project and running tests. Please ensure that your code is correctly validated against the provided test cases.
+

@@ -1,20 +1,49 @@
-Place your C++ source code file in the same directory as this testing framework and name it "main.cpp"
-Make sure that your main.cpp file outputs to the same directory as "array_solution.csv" as requested in homework pdf.
+# Homework Assignment 1: Array Solution
 
-Ensure that your "main.cpp" file accepts file names as command-line arguments. Typically, this means that your main function should accept two arguments: the data file and the operations file.
+This repository contains a C++ program for processing data from a CSV file (`array_solution.csv`) based on operations specified in an operations file. The program accepts filenames as command-line arguments and uses the provided `test.yaml` file for validation.
 
-Use the provided test cases in "test.yml" to validate your C++ code. You can run the tests and compare your program's output against the expected output to check for correctness.
+## Setup
 
-To run these test on calico , connect the docker environment preoviously shown in class.
+1. **Place Your C++ File:**
+   - Place your `main.cpp` file in the same directory as this testing framework.
 
-Go to vscode ubuntu terminal that starts with test@vm_docker:~/hostVolume$ 
-Go to array_solution folder where your c++ file is(current folder) by cd commands.
-run :
-    calico test.yaml
-or:
-    calico --debug test.yaml
-for more info.
+2. **File Naming:**
+   - Name your C++ source code file as `main.cpp`.
+   - Ensure that your `main.cpp` file outputs to the same directory as `array_solution.csv` as requested in the homework PDF.
 
-Don't forget to check the "test_results.txt" file taht will be created after succesfull compares.
+3. **Command-line Arguments:**
+   - Ensure your `main.cpp` file accepts two command-line arguments: the data file and the operations file.
 
-Please contact if there are improvements to made or mistakes to fix. Help us improve the testing quality of this repo.
+## Running Tests
+
+To run tests using the provided test cases in `test.yaml`:
+
+1. **Connect to Calico:**
+   - Connect to the Calico Docker environment as demonstrated in class.
+
+2. **Navigate to Your Code:**
+   - Use the VSCode Ubuntu terminal or any other preferred terminal.
+   - Navigate to the `array_solution` folder where your `main.cpp` file is located..
+
+3. **Run Tests:**
+   - Run the tests using the following command:
+     ```
+     calico test.yaml
+     ```
+     or, for debugging information:
+     ```
+     calico --debug test.yaml
+     ```
+
+4. **Check Results:**
+   - After successful comparisons, a `short_results.txt` file will be created. Check this file for detailed test results and comparisons between your program's output and the expected output.
+
+## Contact and Contributions
+
+If you have suggestions for improvements or if you find any mistakes in the testing framework, please don't hesitate to contact us. Your feedback is invaluable and helps us enhance the testing quality of this repository.
+
+We welcome your contributions to improve this resource. Please follow the guidelines mentioned in the repository's issues section to contribute effectively.
+
+---
+
+**Note:** This README provides essential instructions for setting up your project and running tests. Make sure to follow the guidelines to ensure your code is correctly validated against the provided test cases.
