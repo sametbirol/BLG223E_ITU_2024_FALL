@@ -34,7 +34,7 @@
           run: cp -f ./data/hw1_50_row.csv ./my_solutions/case_2.csv
           blocker: true
 - case_2_50_row:
-          run: ./main ./my_solutions/case_2.csv ./operations/operations_case_2.txt #timeout: 20
+          run: ./main ./my_solutions/case_2.csv ./operations/operations_case_2.txt #timeout: 2
           blocker: true
 
 - testing_case_2:
@@ -46,7 +46,7 @@
           run: cp -f ./data/hw1_100_row.csv ./my_solutions/case_3.csv
           blocker: true
 - case_3_100_row:
-          run: ./main ./my_solutions/case_3.csv ./operations/operations_case_3.txt  #timeout: 100
+          run: ./main ./my_solutions/case_3.csv ./operations/operations_case_3.txt  #timeout: 2
           blocker: true
 
 - testing_case_3:

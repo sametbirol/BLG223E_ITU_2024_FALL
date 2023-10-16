@@ -30,7 +30,7 @@
         points: 10
 
 - case_2_50_row:
-        run: ./main ./data/hw1_50_row.csv ./operations/operations_case_2.txt #timeout: 20
+        run: ./main ./data/hw1_50_row.csv ./operations/operations_case_2.txt #timeout: 2
         blocker: true
 - move_file_2:
         run: mv -f ./array_solution.csv ./my_solutions/case_2.csv
@@ -41,7 +41,7 @@
         points: 10
 
 - case_3_100_row:
-        run: ./main ./data/hw1_100_row.csv ./operations/operations_case_3.txt #timeout: 100
+        run: ./main ./data/hw1_100_row.csv ./operations/operations_case_3.txt #timeout: 2
         blocker: true
 - move_file_3:
         run: mv -f ./array_solution.csv ./my_solutions/case_3.csv
