@@ -34,6 +34,13 @@ To validate your C++ code using the provided test cases in `test.yaml`:
      calico --debug test.yaml
      ```
 
+4. **Check Results Manually:**
+   - If you want to see differnece in files you can run: 
+     ```
+     diff --strip-trailing-cr ./my_solutions/case_1.csv ./solutions/solution_1.csv
+     ```
+   - Don't forget to change the case number as you need!
+
 ## Test Timeout Adjustment
 
 If your code takes longer to solve certain test cases, you can modify `test.yaml` to increase the timeout as needed.
