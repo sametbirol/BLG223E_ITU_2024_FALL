@@ -2,7 +2,7 @@
 This repository is designed to assist students in evaluating their code against solutions provided by either myself or fellow contributors. It is important to note that this repository does not facilitate code sharing. Its primary purpose is to offer a straightforward means of verifying code against solution files generated during code execution, with the sole sharing of these files in the format of .csv. We welcome your contributions to enhance this resource. For further guidance, please refer to the README.md files within each respective folder.
 
 ###### Homework 1 related info
-# When using test_with_error.yaml , don't forget to disable printing new line after each error. Not found a solution yet!
+### When using test_with_error.yaml , don't forget to disable printing new line after each error. Not found a solution yet!
 `Any conclusion you make, taking into account ID, salary and department order, is OK. As long as the information in the line is correct, the characters do not cause any problems.`
 - Carriage return characters are not important, as long as it looks same from human eye, it is okay.
   
