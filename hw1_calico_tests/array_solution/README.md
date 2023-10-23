@@ -1,8 +1,8 @@
-# Homework Assignment 1: Array Solution
+# Homework Assignment 1: Array Solution 📝
 
-This repository contains a C++ program for processing data from a CSV file (`array_solution.csv`) based on operations specified in an operations file. The program accepts filenames as command-line arguments and uses the provided `test.yaml` file for validation.
+This repository contains a C++ program for processing data from a CSV file (`array_solution.csv`) based on operations specified in an operations file. The program accepts filenames as command-line arguments and uses the provided `test.yaml` file for validation. 📦
 
-## Setup
+## Setup 🛠️
 
 1. **Place Your C++ File:**
    - Place your `main.cpp` file in the same directory as this testing framework.
@@ -14,7 +14,7 @@ This repository contains a C++ program for processing data from a CSV file (`arr
 3. **Command-line Arguments:**
    - Ensure your `main.cpp` file accepts two command-line arguments: the data file and the operations file.
 
-## Running Tests
+## Running Tests 🚀
 
 To run tests using the provided test cases in `test.yaml`:
 
@@ -36,18 +36,18 @@ To run tests using the provided test cases in `test.yaml`:
      ```
 
 4. **Check Results Manually:**
-   - If you want to see differnece in files you can run: 
+   - If you want to see the difference in files you can run: 
      ```
      diff --strip-trailing-cr ./my_solutions/case_1.csv ./solutions/solution_1.csv
      ```
-   - Don't forget to change the case number as you need!
+   - Don't forget to change the case number as you need! 🕵️‍♂️
 
-## Contact and Contributions
+## Contact and Contributions 🤝
 
 If you have suggestions for improvements or if you find any mistakes in the testing framework, please don't hesitate to contact us. Your feedback is invaluable and helps us enhance the testing quality of this repository.
 
-We welcome your contributions to improve this resource. Please follow the guidelines mentioned in the repository's issues section to contribute effectively.
+We welcome your contributions to improve this resource. Please follow the guidelines mentioned in the repository's issues section to contribute effectively. 🙌
 
 ---
 
-**Note:** This README provides essential instructions for setting up your project and running tests. Make sure to follow the guidelines to ensure your code is correctly validated against the provided test cases.
+**Note:** This README provides essential instructions for setting up your project and running tests. Make sure to follow the guidelines to ensure your code is correctly validated against the provided test cases. 🚀
