@@ -27,9 +27,9 @@ It's crucial that error messages do not include newline characters. Newline char
 
 Here's an example of a correctly formatted error message:
 
-'ERROR: not valid Id To Update' or 'ERROR: AN invalId Id To update' . Anything in between 'ERROR:' and 'U/update' shouldn't matter.
+'ERROR: not valid Id To Update' or 'ERROR: AN invalId Id To update' . Anything in between 'ERROR:' and 'U/update' shouldn't matter when testing with test_with_errors.yaml file.
 
-
+###It is your responsibility to edit your error messages to comply with assignment pdf when suubmitting.
 
 Please follow these guidelines when creating error messages in our codebase. Consistency in error messages enhances the debugging process and improves the overall quality of our code.
 
