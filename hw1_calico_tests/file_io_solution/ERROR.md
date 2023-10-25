@@ -21,7 +21,13 @@ By adhering to these formats, we maintain consistency in our error messages and 
 
 ## Handling Newline Characters ⚠️
 
-It's crucial that error messages do not include newline characters. Newline characters can make it difficult to match messages in tests. Be sure to avoid using '\n' or any other newline character in your error messages.
+
+You should now be capable of testing with errors. 
+
+Please remember to utilize 'cout' instead of 'cerr.'
+
+It has been noted that [@itu-itis22-saydamm21](https://github.com/itu-itis22-saydamm21)'s solution employs the '\n' character rather than 'endl'.
+
 
 ## Example 📜
 
