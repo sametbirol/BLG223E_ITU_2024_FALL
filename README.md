@@ -1,4 +1,12 @@
-### When using test_with_error.yaml, don't forget to disable printing a new line after each error. Not found a solution yet! ⚠️
+~~When using test_with_error.yaml, don't forget to disable printing a new line after each error. Not found a solution yet!~~
+
+Upon thorough testing with [@itu-itis22-saydamm21](https://github.com/itu-itis22-saydamm21), We have identified the issue to be unique to my own setup of environment.
+
+You should now be capable of testing with errors.
+
+Please remember to utilize 'cout' instead of 'cerr.' 
+
+It has been noted that [@itu-itis22-saydamm21](https://github.com/itu-itis22-saydamm21)'s solution employs the '\n' character rather than 'endl.'
 
 # BLG223E_ITU_2024_FALL 📚
 
