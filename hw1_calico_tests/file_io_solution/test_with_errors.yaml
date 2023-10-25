@@ -20,12 +20,12 @@
 - case_1_10_row:
           run: ./main ./my_solutions/case_1.csv ./../operations/operations_case_1.txt #timeout: 2
           script:
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Ee]mployee' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Ee]mployee(\r\n)*' #timeout: 10
           blocker: true
 - testing_case_1:
           run: diff --strip-trailing-cr ./my_solutions/case_1.csv ./../solutions/solution_1.csv
@@ -38,14 +38,14 @@
 - case_2_50_row:
           run: ./main ./my_solutions/case_2.csv ./../operations/operations_case_2.txt #timeout: 2
           script:
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Ee]mployee' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Ee]mployee(\r\n)*' #timeout: 10
           blocker: true
 
 - testing_case_2:
@@ -59,9 +59,9 @@
 - case_3_100_row:
           run: ./main ./my_solutions/case_3.csv ./../operations/operations_case_3.txt #timeout: 2
           script:
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
           blocker: true
 
 - testing_case_3:
@@ -75,23 +75,23 @@
 - case_4_1k_row:
           run: ./main ./my_solutions/case_4.csv ./../operations/operations_case_4.txt #timeout: 2
           script:
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
           blocker: true
 - testing_case_4:
           run: diff --strip-trailing-cr ./my_solutions/case_4.csv ./../solutions/solution_4.csv
@@ -105,51 +105,51 @@
 - case_5_10k_row:
           run: ./main ./my_solutions/case_5.csv ./../operations/operations_case_5.txt #timeout: 20
           script:
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 10
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 10
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 10
           blocker: true
 
 - testing_case_5:
@@ -163,90 +163,90 @@
 - case_6_100k_row:
           run: ./main ./my_solutions/case_6.csv ./../operations/operations_case_6.txt #timeout: 100
           script:
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Dd]elete' #timeout: 100
-                  - expect: 'ERROR:(.*?)[Uu]pdate' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Dd]elete(\r\n)*' #timeout: 100
+                  - expect: 'ERROR:(.*?)[Uu]pdate(\r\n)*' #timeout: 100
           blocker: true
 
 - testing_case_6:
