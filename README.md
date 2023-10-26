@@ -1,12 +1,22 @@
-~~When using test_with_error.yaml, don't forget to disable printing a new line after each error. Not found a solution yet!~~
+<sub>~~When using test_with_error.yaml, don't forget to disable printing a new line after each error. Not found a solution yet!~~</sub>
 
-Upon thorough testing with [@itu-itis22-saydamm21](https://github.com/itu-itis22-saydamm21), We have identified the issue to be unique to my own setup of environment.
+<sub>Upon thorough testing with [@itu-itis22-saydamm21](https://github.com/itu-itis22-saydamm21), ~~We have identified the issue to be unique to my own setup of environment.~~</sub>
 
-You should now be capable of testing with errors.
+It appears that a particular piece of code was employed by him to mitigate any potential issues arising from newline characters when verifying with Calico. 
 
-Please remember to utilize 'cout' instead of 'cerr.' 
+To address this, you can include the following line as the first instruction within the main function of your solution:
 
-It has been noted that [@itu-itis22-saydamm21](https://github.com/itu-itis22-saydamm21)'s solution employs the '\n' character rather than 'endl.'
+```cpp
+ios_base::sync_with_stdio(false);
+```
+
+By doing so, you should encounter no further complications.
+
+You should now be capable of testing with errors while also printing newline characters.
+
+Please remember to utilize `cout` instead of `cerr`
+
+It has been noted that [@itu-itis22-saydamm21](https://github.com/itu-itis22-saydamm21)'s solution employs the `\n` character rather than `endl`
 
 # BLG223E_ITU_2024_FALL 📚
 
@@ -29,6 +39,6 @@ We welcome your contributions to enhance this resource. For further guidance, pl
 
 - Temporary array usage is okay in file I/O as long as you don't do delete, update, or add on the array, I guess? 🗃️
 
-**Question:** In the array solution, should the output file "array_solution.csv" have the line ID;SALARY;DEPARTMENT, or not? I guess the line is there in file I/O solution. I ask this because in the homework file 3.1.4 "The number of rows must be the same as the number of rows of the last obtained array." This means that there won't be any header line (ID;SALARY;DEPARTMENT). I am asking this just to make sure. 🤔
+**Question:** In the array solution, should the output file "array_solution.csv" have the line ID;SALARY;DEPARTMENT, or not? I guess the line is there in file I/O solution. I ask this because in the homework file 3.1.4 "The number of rows must be the same as the number of rows of the last obtained array." This means that there won't be any header line (ID;SALARY;DEPARTMENT). I am asking this just to make sure.
 
 **Answer:** Add Id;Salary;Department as the header. However, as you said, due to confusion that may arise because of the sentence in the homework file, both solutions will be accepted. 📋
