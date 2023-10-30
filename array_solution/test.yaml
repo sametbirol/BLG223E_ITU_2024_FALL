@@ -7,7 +7,7 @@
           visible: false
 
 - compile:
-          run: /usr/bin/g++ -c main.cpp -o ./main.o
+          run: /usr/bin/g++ -Wall -Werror -c main.cpp -o ./main.o
           blocker: true
 
 - link:
