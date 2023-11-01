@@ -21,6 +21,9 @@
           run: cp -f ./../data/hw1_100_row.csv ./my_solutions/case_3.csv
           blocker: true
 - memleak_2:
-          run: valgrind --leak-check=full --error-exitcode=1 ./main ./../data/hw1_100_row.csv ./../operations/operations_case_3.txt #timeout: 10
+          run: valgrind --leak-check=full --error-exitcode=1 ./main ./my_solutions/case_3.csv ./../operations/operations_case_3.txt #timeout: 10
           exit: 0
           points: 1
+- out:
+          run: rm -f main.o main
+          visible: false

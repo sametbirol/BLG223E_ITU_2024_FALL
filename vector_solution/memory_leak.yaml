@@ -22,3 +22,6 @@
           points: 1
 - move_memleak_file_2:
           run: rm -f ./vector_solution.csv
+- out:
+          run: rm -f main.o main
+          visible: false
