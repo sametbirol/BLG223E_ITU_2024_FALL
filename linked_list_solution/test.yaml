@@ -34,7 +34,7 @@
           blocker: true
 
 - case_2_50_row:
-          run: ./main ./my_solutions/case_2.csv ./../operations/operations_case_2.txt #timeout: 10
+          run: ./main ./my_solutions/case_2.csv ./../operations/operations_case_2.txt #timeout: 2
           blocker: true
 - move_solution_file_2:
           run: mv -f ./linked_list_solution.csv ./my_solutions/case_2.csv
