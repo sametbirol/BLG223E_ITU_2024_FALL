@@ -1,6 +1,6 @@
 # Homework Assignment 1: Array Solution 📝
 
-This repository contains a C++ program for processing data from a CSV file (`array_solution.csv`) based on operations specified in an operations file. The program accepts filenames as command-line arguments and uses the provided `test.yaml` file for validation. 📦
+This repository contains a C++ program for processing data from a CSV file (`array_solution.csv,vector_solution.csv,list_solution.csv,linked_list_solution.csv`) based on operations specified in an operations file. The program accepts filenames as command-line arguments and uses the provided `test.yaml, error.yaml, memory_leak.yaml` file for validation. 📦
 
 ## Setup 🛠️
 
@@ -9,7 +9,7 @@ This repository contains a C++ program for processing data from a CSV file (`arr
 
 2. **File Naming:**
    - Name your C++ source code file as `main.cpp`.
-   - Ensure that your `main.cpp` file outputs to the same directory as `array_solution.csv` as requested in the homework PDF.
+   - Ensure that your `main.cpp` file outputs to the same directory as `array_solution.csv,vector_solution.csv,list_solution.csv,linked_list_solution.csv` as requested in the homework PDF.
 
 3. **Command-line Arguments:**
    - Ensure your `main.cpp` file accepts two command-line arguments: the data file and the operations file.
@@ -23,7 +23,7 @@ To run tests using the provided test cases in `test.yaml`:
 
 2. **Navigate to Your Code:**
    - Use the VSCode Ubuntu terminal or any other preferred terminal.
-   - Navigate to the `array_solution` folder where your `main.cpp` file is located..
+   - Navigate to the `array_solution,vector_solution,list_solution,linked_list_solution,file_io_solution` folder where your `main.cpp` file is located..
 
 3. **Run Tests:**
    - Run the tests using the following command:

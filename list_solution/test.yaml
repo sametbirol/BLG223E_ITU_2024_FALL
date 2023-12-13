@@ -7,7 +7,7 @@
           visible: false
 
 - compile:
-          run: /usr/bin/g++ -c main.cpp -o ./main.o
+          run: /usr/bin/g++ -Wall -Werror -c main.cpp -o ./main.o
           blocker: true
 
 - link:
@@ -17,8 +17,12 @@
 - move_file_1:
           run: cp -f ./../data/hw1_10_row.csv ./my_solutions/case_1.csv
           blocker: true
+
 - case_1_10_row:
           run: ./main ./my_solutions/case_1.csv ./../operations/operations_case_1.txt #timeout: 2
+          blocker: true
+- move_solution_file_1:
+          run: mv -f ./list_solution.csv ./my_solutions/case_1.csv
           blocker: true
 - testing_case_1:
           run: diff --strip-trailing-cr ./my_solutions/case_1.csv ./../solutions/solution_1.csv
@@ -28,22 +32,26 @@
 - move_file_2:
           run: cp -f ./../data/hw1_50_row.csv ./my_solutions/case_2.csv
           blocker: true
+
 - case_2_50_row:
           run: ./main ./my_solutions/case_2.csv ./../operations/operations_case_2.txt #timeout: 2
           blocker: true
-
+- move_solution_file_2:
+          run: mv -f ./list_solution.csv ./my_solutions/case_2.csv
+          blocker: true
 - testing_case_2:
           run: diff --strip-trailing-cr ./my_solutions/case_2.csv ./../solutions/solution_2.csv
           exit: 0
           points: 10
-
 - move_file_3:
           run: cp -f ./../data/hw1_100_row.csv ./my_solutions/case_3.csv
           blocker: true
 - case_3_100_row:
-          run: ./main ./my_solutions/case_3.csv ./../operations/operations_case_3.txt  #timeout: 2
+          run: ./main ./my_solutions/case_3.csv ./../operations/operations_case_3.txt #timeout: 2
           blocker: true
-
+- move_solution_file_3:
+          run: mv -f ./list_solution.csv ./my_solutions/case_3.csv
+          blocker: true
 - testing_case_3:
           run: diff --strip-trailing-cr ./my_solutions/case_3.csv ./../solutions/solution_3.csv
           exit: 0
@@ -55,30 +63,35 @@
 - case_4_1k_row:
           run: ./main ./my_solutions/case_4.csv ./../operations/operations_case_4.txt #timeout: 2
           blocker: true
+- move_solution_file_4:
+          run: mv -f ./list_solution.csv ./my_solutions/case_4.csv
+          blocker: true
 - testing_case_4:
           run: diff --strip-trailing-cr ./my_solutions/case_4.csv ./../solutions/solution_4.csv
           exit: 0
           points: 10
-
 - move_file_5:
           run: cp -f ./../data/hw1_10k_row.csv ./my_solutions/case_5.csv
           blocker: true
 - case_5_10k_row:
           run: ./main ./my_solutions/case_5.csv ./../operations/operations_case_5.txt #timeout: 20
           blocker: true
-
+- move_solution_file_5:
+          run: mv -f ./list_solution.csv ./my_solutions/case_5.csv
+          blocker: true
 - testing_case_5:
           run: diff --strip-trailing-cr ./my_solutions/case_5.csv ./../solutions/solution_5.csv
           exit: 0
           points: 10
-
 - move_file_6:
           run: cp -f ./../data/hw1_100k_row.csv ./my_solutions/case_6.csv
           blocker: true
 - case_6_100k_row:
-          run: ./main ./my_solutions/case_6.csv ./../operations/operations_case_6.txt  #timeout: 100
+          run: ./main ./my_solutions/case_6.csv ./../operations/operations_case_6.txt #timeout: 100
           blocker: true
-
+- move_solution_file_6:
+          run: mv -f ./list_solution.csv ./my_solutions/case_6.csv
+          blocker: true
 - testing_case_6:
           run: diff --strip-trailing-cr ./my_solutions/case_6.csv ./../solutions/solution_6.csv
           exit: 0

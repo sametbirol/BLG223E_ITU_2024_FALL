@@ -1,0 +1,29 @@
+- init:
+          run: rm -f main.o main
+          visible: false
+
+- compile:
+          run: /usr/bin/g++ -Wall -Werror -c main.cpp -o ./main.o
+          blocker: true
+
+- link:
+          run: /usr/bin/g++ ./main.o -o ./main
+          blocker: true
+
+- move_file_1:
+          run: cp -f ./../data/hw1_50_row.csv ./my_solutions/case_2.csv
+          blocker: true
+- memleak_1:
+          run: valgrind --leak-check=full --error-exitcode=1 ./main ./my_solutions/case_2.csv ./../operations/operations_case_2.txt #timeout: 10
+          exit: 0
+          points: 1
+- move_file_2:
+          run: cp -f ./../data/hw1_100_row.csv ./my_solutions/case_3.csv
+          blocker: true
+- memleak_2:
+          run: valgrind --leak-check=full --error-exitcode=1 ./main ./my_solutions/case_3.csv ./../operations/operations_case_3.txt #timeout: 10
+          exit: 0
+          points: 1
+- out:
+          run: rm -f main.o main
+          visible: false
