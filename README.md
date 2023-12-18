@@ -1,6 +1,13 @@
 ## Homework 3 Related Info 📝
-- Hybrid Solution
-  - Ensure each binary tree within the vector is correctly printed to `output.csv`.
+- > You will upload a zip file that MUST contain 3 different cpp files named as "binary_tree.cpp", "hybrid.cpp", and "map.cpp". You can also use a header file to organize the common functions into one header file. Do not create additional folders inside the zip. Everything must be directly in the zip file without any folders.
+
+### Include Folder
+- Organize your header files within this folder specifically for testing with YAML files.
+- Remember to update the header paths before submitting your homework.
+
+### Hybrid Solution
+- Verify that each binary tree within the vector is accurately printed into the `output.csv` file.
+
 
 ### Calico expect errors
 You can include the following line as the first instruction within the main function of your solution:
