@@ -3,6 +3,8 @@
   - Ensure each binary tree within the vector is correctly printed to `output.csv`.
 
 ### Calico expect errors
+You can include the following line as the first instruction within the main function of your solution:
+
 ```cpp
 ios_base::sync_with_stdio(false);
 ```
