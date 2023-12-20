@@ -1,0 +1,50 @@
+---
+- init:
+    run: rm -f main
+    visible: true
+- build:
+    blocker: true
+    exit: 0
+    run: g++ -Wall -Werror -I ../include main.cpp -o main
+- case_1:
+    blocker: true
+    exit: 0
+    run: ./main ../data/10k_employees.csv ../operations/operations_for_10k_1.csv
+- case_1_file:
+    exit: 0
+    run: diff ./output.csv ../solutions/solutions_for_10k_1.csv
+- case_2:
+    blocker: true
+    exit: 0
+    run: ./main ../data/10k_employees.csv ../operations/operations_for_10k_2.csv # timeout: 100
+- case_2_file:
+    exit: 0
+    run: diff ./output.csv ../solutions/solutions_for_10k_2.csv
+- case_3:
+    blocker: true
+    exit: 0
+    run: ./main ../data/100k_employees.csv ../operations/operations_for_100k_1.csv # timeout: 100 
+- case_3_file:
+    exit: 0
+    run: diff ./output.csv ../solutions/solutions_for_100k_1.csv # timeout: 100
+- case_4:
+    blocker: true
+    exit: 0
+    run: ./main ../data/100k_employees.csv ../operations/operations_for_100k_2.csv # timeout: 100
+- case_4_file:
+    exit: 0
+    run: diff ./output.csv ../solutions/solutions_for_100k_2.csv # timeout: 100
+- case_5:
+    blocker: true
+    exit: 0
+    run: ./main ../data/500k_employees.csv ../operations/operations_for_500k_1.csv # timeout: 1000
+- case_5_file:
+    exit: 0
+    run: diff ./output.csv ../solutions/solutions_for_500k_1.csv # timeout: 1000
+- case_6:
+    blocker: true
+    exit: 0
+    run: ./main ../data/500k_employees.csv ../operations/operations_for_500k_2.csv # timeout: 1000
+- case_6_file:
+    exit: 0
+    run: diff ./output.csv ../solutions/solutions_for_500k_2.csv # timeout: 1000
