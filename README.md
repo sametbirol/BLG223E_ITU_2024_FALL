@@ -1,17 +1,8 @@
-## Homework 3 Related Info 📝
-- > You will upload a zip file that MUST contain 3 different cpp files named as "binary_tree.cpp", "hybrid.cpp", and "map.cpp". You can also use a header file to organize the common functions into one header file. Do not create additional folders inside the zip. Everything must be directly in the zip file without any folders.
-
-### Include Folder
-- Organize your header files within this folder specifically for testing with YAML files.
-- Remember to update the header paths before submitting your homework.
-
-### Hybrid Solution
-- Verify that each binary tree within the vector is accurately printed into the `output.csv` file.
-
+## Homework 4 Related Info 📝
+- Employee id starts with 1. Solutions are updated.
 
 ### Calico expect errors
 You can include the following line as the first instruction within the main function of your solution:
-
 ```cpp
 ios_base::sync_with_stdio(false);
 ```
@@ -31,3 +22,15 @@ Welcome to the BLG223E course repository for the Fall 2024 semester at ITU. This
 🚫 Please note that this repository does not facilitate code sharing. Its primary purpose is to offer a straightforward means of verifying code against solution files generated during code execution, with the sole sharing of these files in the format of .csv. 📃
 
 We welcome your contributions to enhance this resource. For further guidance, please refer to the README.md files within each respective folder. 🤝
+
+### Homework 3 Related Info 📝
+- > You will upload a zip file that MUST contain 3 different cpp files named as "binary_tree.cpp", "hybrid.cpp", and "map.cpp". You can also use a header file to organize the common functions into one header file. Do not create additional folders inside the zip. Everything must be directly in the zip file without any folders.
+
+#### Include Folder
+- Organize your header files within this folder specifically for testing with YAML files.
+- Remember to update the header paths before submitting your homework.
+
+#### Hybrid Solution
+- Verify that each binary tree within the vector is accurately printed into the `output.csv` file.
+
+
